@@ -242,8 +242,10 @@ article h2 {
 
 #projeto-container .foto {
   width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
   overflow: hidden;
   border-radius: 8px;
 
@@ -284,9 +286,11 @@ footer {
   }
 
   #projeto-container .foto {
-    aspect-ratio: 1/1;
-    max-width: 20%;
-    max-height: 200px;
+    width: 45%;
+    max-width: 480px;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
   }
 }
 
